@@ -12,47 +12,40 @@ En este repositorio encontrarás los archivos de entrada, así como las salidas 
 ```
 <span style="text-decoration: underline;">De manera individual</span>, desarrolla la solución del siguiente problema:
 
-Considere un árbol enraizado. Un árbol con raíz tiene un vértice especial llamado raíz. Todos los bordes están dirigidos desde la raíz. El vértice *u* se llama hijo del vértice *v* y el vértice *v* se llama padre del vértice *u* si existe una arista dirigida de *v* a *u*. Un vértice se llama hoja si no tiene hijos y tiene un padre.
- 
-Llamemos abeto a un árbol enraizado si cada uno de sus vértices que no son hojas tiene al menos 3 hijos hojas. Dado un árbol enraizado, comprueba si es un abeto.
+Había una vez en un pequeño pueblo llamado Algoritmia, un joven programador llamado Luis. Luis era conocido por su destreza en la resolución de problemas algorítmicos y su pasión por la informática. Un día, el anciano sabio del pueblo, el Profesor Binary, le presentó un desafío intrigante: reconstruir un árbol binario utilizando solo dos de sus recorridos: el recorrido inorder y otro que podía ser el preorder o el postorder.
+
+Luis aceptó el reto con entusiasmo. Sabía que los recorridos de un árbol binario contenían valiosa información sobre la estructura del árbol, pero nunca había intentado algo tan complejo. ¿Puedes ayudar con este reto?
 
 ## <span style="color: rgb(26, 99, 169);">**Entrada**</span>
-La primera línea contiene un número entero *n*: el número de vértices en el árbol (3 <= *n* <= 1000). Cada una de las siguientes *n* - 1 líneas contiene un número entero p<sub>i</sub> (1 <= *i* <= *n* - 1), el índice del padre del *i* + 1-ésimo vértice (1 <= p<sub>i</sub> <= i).
+La primera línea contiene un solo número entero t (2 <= t <= 6), que representa el número de niveles del árbol.
+
+A continuación, siguen 2 líneas. Cada una de estas líneas contiene primero el tipo de recorrido (IN, PRE, POST) seguido por una cadena que representa el recorrido específico. Ten en cuenta que uno de los recorridos siempre será el recorrido inorder del árbol.
 
 ## <span style="color: rgb(26, 99, 169);">**Salida**</span>
-Despliega "Yes" si el árbol es un abeto y "No" en caso contrario.
+El recorrido por niveles del árbol.
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada 1**</span>
 ```
-7
-1
-1
-1
-2
-2
-2
+3
+POS AGDC
+IN CADG
 ```
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida 1**</span>
 ```
-No
+C D  AG
 ```
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de entrada 2**</span>
 ```
-8
-1
-1
-1
-1
-3
-3
-3
+5
+IN FAIVXGadZeRBKJHQ
+PRE FZXIAVaGdKReBHJQ
 ```
 
 ## <span style="color: rgb(26, 99, 169);">**Ejemplo de salida 2**</span>
 ```
-Yes
+F Z  XK    IaRH        AVGdeBJQ
 ```
 
 Para probar tu implementación, compila tu programa con el comando:
@@ -70,7 +63,7 @@ Por último, realiza una investigación y reflexión en forma individual de la
 
 ## <span style="color: rgb(26, 99, 169);">**¿Bajo qué criterios se evalúa mi evidencia?**</span>
 
-- **80%** - Para cada una de las funcionalidades se evaluará:
+- **65%** - Para cada una de las funcionalidades se evaluará:
 
     - **Excelente (80%)** - pasa correctamente todos los casos de prueba.
     - **Muy Bien (60%)** - pasa correctamente el 75% de los casos de prueba.
@@ -78,8 +71,9 @@ Por último, realiza una investigación y reflexión en forma individual de la
     - **Insuficiente (20%)** - pasa correctamente menos del 50% de los casos de prueba.
 
 
-- **10%** - El código deberá seguir los lineamientos estipulados en el estándar de codificación: <span class="instructure_file_holder link_holder">[liga_estándar_codificación](estandar.pdf)</span>
-- **10%** - Se respetenan los nombres de las funciones en la aplicación.
+- **10%** - 15% - El código deberá seguir los lineamientos estipulados en el estándar de codificación: <span class="instructure_file_holder link_holder">[liga_estándar_codificación](https://github.com/Manchas2k4/tc1031)</span>
+- **10%** - Especifican en cada uno de las funcionalidades la complejidad computacional como parte de su documentación.
+- **15%** - Emplea los algoritmos y estructuras de datos más eficientes para la solución del problema.
 
 ## <span style="color: rgb(26, 99, 169);">**¿Dónde la entrego?**</span>
 Esta actividad forma parte tanto de tu calificación final del curso, así como del portafolio de evidencias de las competencias a desarrollar del curso, por lo que se te pide que en forma individual:
@@ -87,6 +81,6 @@ Esta actividad forma parte tanto de tu calificación final del curso, así como 
 * Generes una carpeta en forma personal llamada **TC1031(Portafolio_Final)** que servirá como preparación para la entrega del portafolio de competencias que se realizará al final del curso, esta carpeta debe contener 5 carpetas:
     * Act1.3
     * Act2.3
-    * **Act3.4** - coloca aquí tus archivos que solucionaron la <span style="text-decoration: underline;">actividad 1.3</span> así como el documento de reflexión individual (**ReflexAct3.4.pdf**).
+    * **Act3.4** - coloca aquí tus archivos que solucionaron la <span style="text-decoration: underline;">actividad 3.4</span> así como el documento de reflexión individual sobre el impacto del TDA árbol en las tareas más comunes de la programación. (**ReflexAct3.4.pdf**).
     * Act4.3
     * Act5.2
